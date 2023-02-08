@@ -21,7 +21,8 @@ RUN apt-get -y install python3.10 && \
 RUN apt-get clean
 
 RUN pip install pip --upgrade
-RUN pip install ansible
+RUN pip install ansible && \
+    pip install ansible-pylibssh
 RUN ansible-galaxy collection install cisco.aci; \
     ansible-galaxy collection install cisco.cml; \
     ansible-galaxy collection install cisco.dcnm; \
