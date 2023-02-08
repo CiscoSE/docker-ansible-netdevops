@@ -10,7 +10,9 @@ LABEL version=0.2
 
 RUN apt-get update && \
     apt-get -y install sudo && \
-    apt-get -y install software-properties-common
+    apt-get -y install software-properties-common && \
+    apt-get install -y locales 
+RUN locale-gen en_US.UTF-8
 
 RUN add-apt-repository -y ppa:deadsnakes/ppa 
 RUN apt-get -y install python3.10 && \
