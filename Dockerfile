@@ -11,6 +11,7 @@ LABEL version=0.2
 RUN apt-get update && \
     apt-get -y install sudo && \
     apt-get -y install software-properties-common && \
+    apt-get -y install openssh-client && \
     apt-get install -y locales 
 RUN locale-gen en_US.UTF-8
 
