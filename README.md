@@ -1,4 +1,7 @@
 # Ansible Container for Cisco NetDevOps
+
+[![published](https://static.production.devnetcloud.com/codeexchange/assets/images/devnet-published.svg)](https://developer.cisco.com/codeexchange/github/repo/CiscoSE/docker-ansible-netdevops)
+
 A basic docker container hosting ansible and the required Cisco Collections for automation use cases against Cisco Network infrasturcture.
 
 # Assumptions
